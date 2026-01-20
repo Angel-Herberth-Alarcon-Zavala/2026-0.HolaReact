@@ -3,11 +3,13 @@ import { createRoot } from 'react-dom/client'
 import Titulo from './Titulo'
 import Cuerpo from './Cuerpo'
 
-const nombre = "Jesus"
+import './main.css'
+
+const nombre = "Luis"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Titulo />
-    <Cuerpo />
+    <Cuerpo nom={ nombre } esMayorEdad={false} />
   </StrictMode>,
 )
